@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #222831;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+a  {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* button */
+.btn {
+    padding: 1rem 1.5rem;
+    background: #222831;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn:hover {
+    background: #393E46;
+    color: white;
+}
+
+/* title */
+.hero-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #393E46;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.hero-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: #393E46;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* navbar and logo */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    transition: 0.2s ease-in-out;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin-right: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.logo a {
+    color: #222831;
+}
+
+.navbar ul li a {
+    padding: 8px;
+    color: #222831;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar.scrolled {
+    background: #222831;
+}
+
+.navbar.scrolled ul li a {
+    color: white;
+}
+
+.navbar.scrolled .logo a {
+    color: white;
+}
+
+/* Home Section */
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0rem;
+    color: #222831;
+}
+
+.hero-right img {
+    width: 450px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* About Section */
+#about {
+    background-color: #EEEEEE;
+    padding: 6rem 0;
+}
+
+.about-title {
+    text-align: center;
+    margin: 1rem 0 2rem;
+    text-transform: uppercase;
+}
+
+/* layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #222831;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.about h4 {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.about p {
+    color: white;
+}
+
+.about-icon {
+    background-color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+}
+/* End of About */
+
+/* Skills */
+#skills {
+    padding: 6rem 0;
+}
+
+.skills-title {
+    text-align: center;
+    margin: 1rem 0 3rem;
+    text-transform: uppercase;
+}
+
+.grid-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.experience {
+    display: flex;
+    gap: 2rem;
+}
+
+.experience line {
+    padding: 0 0.7rem;
+}
+
+.experience .line div {
+    width: 2px;
+    height: 100%;
+    background: #222831;
+    position: relative;
+}
+
+.experience-info {
+    margin: 0.3rem 0;
+}
+
+.experience-date {
+    margin-bottom: 3rem;
+}
+
+.experience .line div::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #222831;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.grid-skills-right {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+/* End of Skills */
+
+/* Contact */
+#contact {
+    padding: 6rem;
+    background: #EEEEEE;
+}
+
+.contact-form div {
+    margin-bottom: 1.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #222831;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #EEEEEE;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #222831;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #393E46;
+    color: white;
+}
+/* End of Contact */
+
+/* Footer */
+footer {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: white;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+    fill: #222831;
+}
+
+.footer-icons {
+    fill: #EEEEEE;
+}
